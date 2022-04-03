@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TLDR Extension</title>
+  <script src="jquery-3.1.0.min.js"></script>
+  <script src="popup.js"></script>
+
+  <style type="text/css">
+    body {
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #summaryTitle {
+      display: none;
+    }
+
+    #loading-image {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>TLDRer</h1>
+
+  <h3>Generate Wiki Summary</h3>
+  <input id="keyword" type="text">
+  <input id="keywordsubmit" type="submit" value="Search" />
+  <br>
+  <h3>Generate Page Summary</h3>
+  <input id="pageSubmit" type="submit" value="Summarize" />
+
+  <h3 id="summaryTitle">Summary</h3>
+  <h4 id="summaryCategories"></h4>
+  <div id="summaryResult"></div>
+  <img id="loading-image" src="loader.gif" alt="Loading..." />
+
+</body>
+
+</html>

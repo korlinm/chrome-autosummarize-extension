@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "TLDRer",
+  "description": "This extension can summarize a webpage, and give a wiki description of a word",
+  "version": "1.0",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  "action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "background",
+    "identity",
+    "notifications"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ]
+}

@@ -1,0 +1,6 @@
+torch
+nltk
+gensim
+bs4
+lxml
+transformers
